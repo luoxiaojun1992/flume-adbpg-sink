@@ -1,0 +1,1 @@
+# Flume Sink for Aliyun Analytic DB for Postgresql
