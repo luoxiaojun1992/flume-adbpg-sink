@@ -187,7 +187,7 @@ public class AdbpgSink extends AbstractSink implements Configurable {
         batchCount = context.getInteger(BATCH_COUNT);
 
         if (batchCount > MAX_BATCH_COUNT) {
-            throw new FlumeException("Batch count must less than or equal 10000");
+            throw new FlumeException("Batch count must less than or equal " + String.valueOf(MAX_BATCH_COUNT));
         }
 
         String charsetName = context.getString(ENCODING_PROP, DEFAULT_ENCODING);
